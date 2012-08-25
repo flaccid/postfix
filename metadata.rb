@@ -48,6 +48,11 @@ attribute "postfix/relayhost",
   :description => "Sets the relayhost value in main.cf",
   :default => ""
 
+attribute "postfix/inet_interfaces",
+  :display_name => "Postfix Network Interfaces",
+  :description => "The network interface postfix binds to in main.cf",
+  :default => "loopback-only"
+
 attribute "postfix/mail_relay_networks",
   :display_name => "Postfix Mail Relay Networks",
   :description => "Sets the mynetworks value in main.cf",
